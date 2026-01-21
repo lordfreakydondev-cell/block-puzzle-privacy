@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité - Block Puzzle Classic</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #1f2937;
+            background: linear-gradient(to bottom, #f8fafc 0%, #e2e8f0 100%);
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .header .app-name {
+            font-size: 1.3em;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        .header .last-updated {
+            margin-top: 15px;
+            font-size: 0.95em;
+            opacity: 0.85;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -40px auto 60px;
+            background: white;
+            border-radius: 16px;
+            padding: 50px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .notice-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 5px solid #f59e0b;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(245, 158, 11, 0.1);
+        }
+
+        .notice-box strong {
+            color: #92400e;
+            font-size: 1.1em;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .notice-box p {
+            color: #78350f;
+            margin: 0;
+        }
+
+        h2 {
+            color: #1e40af;
+            font-size: 1.9em;
+            font-weight: 700;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #dbeafe;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #4338ca;
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 18px;
+            color: #374151;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-left: 0;
+            margin-bottom: 20px;
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 12px;
+            padding-left: 30px;
+            position: relative;
+            color: #4b5563;
+        }
+
+        li:before {
+            content: "▸";
+            color: #6366f1;
+            font-weight: bold;
+            position: absolute;
+            left: 10px;
+        }
+
+        li strong {
+            color: #1f2937;
+        }
+
+        .info-card {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            border-left: 5px solid #3b82f6;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            box-shadow: 0 2px 4px rgba(59, 130, 246, 0.1);
+        }
+
+        .info-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .success-card {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border-left: 5px solid #10b981;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+        }
+
+        a {
+            color: #6366f1;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: #4f46e5;
+            border-bottom-color: #4f46e5;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+            padding: 35px;
+            border-radius: 12px;
+            margin-top: 40px;
+            border: 2px solid #e5e7eb;
+            text-align: center;
+        }
+
+        .contact-section h3 {
+            color: #1f2937;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 1.05em;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #6366f1;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        .footer-message {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 50px;
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+        }
+
+        .footer-message p {
+            color: white;
+            margin: 0;
+            font-size: 1.1em;
+        }
+
+        .toc {
+            background: #f9fafb;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            border: 2px solid #e5e7eb;
+        }
+
+        .toc h3 {
+            color: #1f2937;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .toc ul {
+            margin: 0;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: #4b5563;
+            border-bottom: 1px dotted #9ca3af;
+        }
+
+        .toc a:hover {
+            color: #6366f1;
+            border-bottom-color: #6366f1;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 40px 20px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .container {
+                padding: 30px 20px;
+                margin: -30px 15px 40px;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .container {
+                box-shadow: none;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔒 Politique de Confidentialité</h1>
+        <div class="app-name">Block Puzzle - Classic Game</div>
+        <div class="last-updated">Dernière mise à jour : Janvier 2025</div>
+    </div>
+
+    <div class="container">
+        <div class="notice-box">
+            <strong>⚠️ Information Importante</strong>
+            <p>En utilisant cette application, vous acceptez cette politique de confidentialité. Nous nous engageons à protéger votre vie privée et à être transparent sur les données collectées et leur utilisation.</p>
+        </div>
+
+        <div class="toc">
+            <h3>📋 Sommaire</h3>
+            <ul>
+                <li><a href="#intro">1. Introduction</a></li>
+                <li><a href="#donnees">2. Données Collectées</a></li>
+                <li><a href="#utilisation">3. Utilisation des Données</a></li>
+                <li><a href="#partage">4. Partage des Données</a></li>
+                <li><a href="#protection">5. Protection des Données</a></li>
+                <li><a href="#enfants">6. Protection des Enfants</a></li>
+                <li><a href="#droits">7. Vos Droits et Choix</a></li>
+                <li><a href="#tiers">8. Services Tiers</a></li>
+                <li><a href="#modifications">9. Modifications</a></li>
+                <li><a href="#juridiction">10. Conformité Légale</a></li>
+                <li><a href="#contact">11. Contact</a></li>
+            </ul>
+        </div>
+
+        <h2 id="intro">📱 1. Introduction</h2>
+        <p>
+            La présente politique de confidentialité régit la collecte, l'utilisation et la protection des données 
+            dans le cadre de l'utilisation de l'application mobile "Block Puzzle - Classic Game" 
+            (ci-après désignée "l'Application"). Ce document détaille de manière transparente les informations 
+            collectées, leur finalité d'utilisation et vos droits en tant qu'utilisateur.
+        </p>
+
+        <h2 id="donnees">📊 2. Données Collectées</h2>
+        
+        <h3>2.1 Données Locales (stockées sur votre appareil)</h3>
+        <div class="info-card">
+            <p>L'Application stocke uniquement sur votre appareil les informations suivantes :</p>
+        </div>
+        <ul>
+            <li><strong>Scores et statistiques de jeu :</strong> meilleur score personnel, nombre de parties jouées, lignes complétées, statistiques de performance</li>
+            <li><strong>Préférences utilisateur :</strong> paramètres audio, activation/désactivation des vibrations, thème sélectionné</li>
+            <li><strong>Données de progression :</strong> historique des sessions de jeu</li>
+        </ul>
+        <div class="success-card">
+            <p><strong>✓ Protection de votre vie privée :</strong> Ces données restent strictement confidentielles sur votre appareil et ne sont jamais transmises à nos serveurs ni à des tiers.</p>
+        </div>
+
+        <h3>2.2 Données Collectées par les Services Publicitaires Tiers</h3>
+        <p>L'Application intègre <strong>Google AdMob</strong> pour l'affichage de publicités. AdMob peut collecter automatiquement :</p>
+        <ul>
+            <li><strong>Identifiant publicitaire (Advertising ID) :</strong> identifiant anonyme, unique et réinitialisable par l'utilisateur</li>
+            <li><strong>Données d'interaction publicitaire :</strong> clics sur les annonces, fréquence d'affichage, impressions</li>
+            <li><strong>Informations techniques de l'appareil :</strong> modèle, fabricant, version du système d'exploitation Android, langue système, fuseau horaire</li>
+            <li><strong>Données de localisation approximative :</strong> pays et ville estimés à partir de l'adresse IP (aucune géolocalisation GPS précise)</li>
+        </ul>
+
+        <h2 id="utilisation">🎯 3. Utilisation des Données</h2>
+        
+        <h3>3.1 Utilisation par l'Application</h3>
+        <p>Les données locales sont utilisées exclusivement pour :</p>
+        <ul>
+            <li>Sauvegarder et restaurer votre progression et vos meilleurs scores</li>
+            <li>Personnaliser votre expérience de jeu selon vos préférences</li>
+            <li>Améliorer les fonctionnalités et l'ergonomie de l'Application</li>
+            <li>Assurer la continuité de votre expérience entre les sessions</li>
+        </ul>
+
+        <h3>3.2 Utilisation par Google AdMob</h3>
+        <p>Les données collectées par AdMob sont utilisées pour :</p>
+        <ul>
+            <li>Afficher des publicités pertinentes et adaptées (personnalisées ou non selon vos paramètres)</li>
+            <li>Mesurer l'efficacité et les performances des campagnes publicitaires</li>
+            <li>Détecter, prévenir et combattre la fraude publicitaire</li>
+            <li>Respecter les obligations légales et réglementaires applicables</li>
+        </ul>
+
+        <h2 id="partage">🔐 4. Partage des Données</h2>
+        <div class="info-card">
+            <p><strong>Engagement ferme :</strong> Nous ne vendons, ne louons et ne partageons jamais vos données personnelles à des fins commerciales.</p>
+        </div>
+        <p>
+            Les seules données partagées le sont avec Google AdMob, conformément à leur 
+            <a href="https://policies.google.com/privacy" target="_blank">politique de confidentialité</a>, 
+            et uniquement dans le cadre strict de l'affichage publicitaire et de l'analyse des performances.
+        </p>
+
+        <h2 id="protection">🛡️ 5. Protection et Sécurité des Données</h2>
+        <p>Nous mettons en œuvre les mesures suivantes pour protéger vos données :</p>
+        <ul>
+            <li><strong>Stockage local sécurisé :</strong> les données de jeu sont stockées dans l'espace privé de l'Application sur votre appareil</li>
+            <li><strong>Minimisation des données :</strong> aucune donnée personnelle identifiable (nom, email, téléphone) n'est collectée</li>
+            <li><strong>Aucune authentification requise :</strong> l'Application ne nécessite pas de création de compte</li>
+            <li><strong>Fonctionnement hors ligne :</strong> aucune connexion Internet n'est requise pour jouer (sauf pour l'affichage des publicités)</li>
+            <li><strong>Chiffrement des communications :</strong> toutes les communications avec les serveurs AdMob sont chiffrées (HTTPS)</li>
+        </ul>
+
+        <h2 id="enfants">👶 6. Protection des Enfants et Contenu Familial</h2>
+        <p>
+            Cette Application est conçue pour être accessible à tous les âges, y compris les enfants. 
+            Nous respectons strictement la réglementation relative à la protection de la vie privée des mineurs :
+        </p>
+        <ul>
+            <li>Nous ne collectons pas sciemment d'informations personnelles identifiables auprès d'enfants de moins de 13 ans</li>
+            <li>Les publicités affichées sont conformes aux normes de Google concernant le contenu adapté aux familles</li>
+            <li>L'Application est certifiée comme "Contenu familial" sur le Google Play Store</li>
+            <li>Aucune fonctionnalité de communication ou de partage social n'est intégrée</li>
+        </ul>
+
+        <h2 id="droits">⚙️ 7. Vos Droits et Options de Contrôle</h2>
+        
+        <h3>7.1 Gestion de la Publicité Personnalisée</h3>
+        <p>Vous disposez d'un contrôle total sur la personnalisation publicitaire :</p>
+        
+        <div class="info-card">
+            <p><strong>Sur Android :</strong></p>
+            <ul>
+                <li>Accédez à <strong>Paramètres</strong> → <strong>Google</strong> → <strong>Annonces</strong></li>
+                <li>Activez l'option <strong>"Désactiver la personnalisation des annonces"</strong></li>
+                <li>Ou sélectionnez <strong>"Réinitialiser l'identifiant publicitaire"</strong> pour générer un nouvel ID anonyme</li>
+            </ul>
+        </div>
+
+        <p>Vous pouvez également gérer vos préférences publicitaires Google sur : 
+        <a href="https://adssettings.google.com" target="_blank">adssettings.google.com</a></p>
+
+        <h3>7.2 Suppression des Données</h3>
+        <p>Pour supprimer définitivement toutes les données locales de l'Application :</p>
+        <ul>
+            <li><strong>Méthode 1 :</strong> Désinstaller l'Application de votre appareil (suppression automatique de toutes les données)</li>
+            <li><strong>Méthode 2 :</strong> Paramètres Android → Applications → Block Puzzle → Stockage → Effacer les données</li>
+        </ul>
+
+        <h3>7.3 Droits RGPD (Utilisateurs de l'Union Européenne)</h3>
+        <p>Conformément au RGPD, vous bénéficiez des droits suivants :</p>
+        <ul>
+            <li><strong>Droit d'accès :</strong> obtenir une copie des données vous concernant</li>
+            <li><strong>Droit de rectification :</strong> corriger des données inexactes</li>
+            <li><strong>Droit à l'effacement :</strong> demander la suppression de vos données</li>
+            <li><strong>Droit d'opposition :</strong> vous opposer au traitement de certaines données</li>
+            <li><strong>Droit à la portabilité :</strong> recevoir vos données dans un format structuré</li>
+        </ul>
+
+        <h2 id="tiers">🔗 8. Services Tiers Intégrés</h2>
+        <p>L'Application fait appel aux services tiers suivants :</p>
+        
+        <div class="info-card">
+            <h3 style="margin-top: 0;">Google AdMob</h3>
+            <p><strong>Fonction :</strong> Diffusion de publicités au sein de l'Application</p>
+            <p><strong>Données collectées :</strong> Identifiant publicitaire, informations techniques, interactions publicitaires</p>
+            <p><strong>Politique de confidentialité :</strong> 
+                <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
+            </p>
+            <p><strong>Comment Google utilise les données des sites partenaires :</strong> 
+                <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a>
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3 style="margin-top: 0;">Google Play Services</h3>
+            <p><strong>Fonction :</strong> Services système Android essentiels au fonctionnement de l'Application</p>
+            <p><strong>Politique de confidentialité :</strong> 
+                <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
+            </p>
+        </div>
+
+        <h2 id="modifications">📝 9. Modifications de cette Politique</h2>
+        <p>
+            Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment 
+            pour refléter les évolutions de nos pratiques, de la législation ou des fonctionnalités de l'Application. 
+        </p>
+        <p>
+            En cas de modification substantielle, nous mettrons à jour la date de "Dernière mise à jour" en haut de ce document. 
+            Les modifications prennent effet immédiatement après leur publication. Nous vous encourageons à consulter 
+            régulièrement cette page pour rester informé de la manière dont nous protégeons vos données.
+        </p>
+
+        <h2 id="juridiction">🌍 10. Conformité Légale et Réglementaire</h2>
+        <p>Cette Application est développée dans le respect strict des réglementations internationales suivantes :</p>
+        
+        <ul>
+            <li><span class="tag">UE</span><strong>RGPD</strong> (Règlement Général sur la Protection des Données) - Protection renforcée des données personnelles</li>
+            <li><span class="tag">USA</span><strong>CCPA</strong> (California Consumer Privacy Act) - Droits des consommateurs californiens</li>
+            <li><span class="tag">USA</span><strong>COPPA</strong> (Children's Online Privacy Protection Act) - Protection de la vie privée des enfants de moins de 13 ans</li>
+            <li><span class="tag">Global</span><strong>Politiques Google Play</strong> - Conformité aux exigences du Google Play Store</li>
+        </ul>
+
+        <h2 id="contact">✉️ 11. Nous Contacter</h2>
+        <div class="contact-section">
+            <h3>Des questions sur cette politique de confidentialité ?</h3>
+            <p>Notre équipe est à votre disposition pour répondre à toutes vos questions concernant 
+            la protection de vos données personnelles et vos droits.</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>📧 Email :</strong> 
+                    <a href="mailto:lordfreakydon.dev@gmail.com">lordfreakydon.dev@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>🏢 Développeur :</strong> 
+                    LFD Games
+                </div>
+                <div class="contact-item">
+                    <strong>⏱️ Délai de réponse :</strong> 
+                    Sous 48 heures ouvrées
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-message">
+            <p>
+                <strong>🎮 Merci d'avoir lu notre politique de confidentialité !</strong><br>
+                Profitez du jeu en toute tranquillité et sécurité.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
